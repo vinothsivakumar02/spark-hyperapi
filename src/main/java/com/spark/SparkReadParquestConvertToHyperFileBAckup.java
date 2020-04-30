@@ -22,9 +22,9 @@ public class SparkReadParquestConvertToHyperFileBAckup {
                 .appName("SparkCreateHyperFromCsv").getOrCreate();
 
         spark.sparkContext().hadoopConfiguration().set("fs.s3.impl", "org.apache.hadoop.fs.s3native.NativeS3FileSystem");
-        spark.sparkContext().hadoopConfiguration().set("fs.s3n.awsAccessKeyId", "AKIASLB7TOELW6PJJPSX");
+        spark.sparkContext().hadoopConfiguration().set("fs.s3n.awsAccessKeyId", "*******");
 
-        spark.sparkContext().hadoopConfiguration().set("fs.s3n.awsSecretAccessKey", "zYjd/Pf7hwCuPflxWyMEK8Pe4OHhCqS8+5uun6nA");
+        spark.sparkContext().hadoopConfiguration().set("fs.s3n.awsSecretAccessKey", "*******A");
 
 
         Dataset<Row> ds = spark.read().format("com.databricks.spark.csv").option("inferSchema", "true")
