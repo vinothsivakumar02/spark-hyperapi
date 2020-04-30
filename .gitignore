@@ -1,0 +1,45 @@
+##########################
+## Maven
+##########################
+target/
+data/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+##########################
+## IntelliJ
+##########################
+*.iml
+.idea/
+*.ipr
+*.iws
+.idea_modules/
+
+##########################
+## Eclipse
+##########################
+.metadata
+.classpath
+.project
+.settings/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+
+##########################
+## OS X
+##########################
+.DS_Store
+.factorypath
+
+.terraform/
+*.tfstate*
+provider.tf
